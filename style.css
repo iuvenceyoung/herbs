@@ -53,7 +53,7 @@ display: flex;
 /*  */
 .home-container
 {
-    height: 75vh;
+    height: 120vh;
     background-image: url('assets/bgimage.webp');
     background-position: center;
     background-size: cover;
@@ -85,6 +85,9 @@ display: flex;
  /* about css */
 .about-container{
     height: 75vh;
+}
+.about-container h1{
+    padding-top: 3%;
 }
 .d-flex {
     height: 40vh;
@@ -124,5 +127,5 @@ display: flex;
 
 
 .contact-container{
-    height: 100vh;
+    /* height: 85vh; */
 }
