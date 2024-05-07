@@ -3,250 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Herbs</title>
+    <title> Online Herbs</title>
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style2.css">
-    
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
 </head>
 <body>
 
-    <header class="position-fixed w-100">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <div class="container-fluid">
-                <div class="col-4 text-center">
-                  <!-- <a class="navbar-brand"  href="#"><img src="assets/main-logo.png" alt="logo" width="75"> </a> -->
-                  <a class="navbar-brand" href="#"><img src="assets/main-logo.png" alt="logo" width="75"></a>
 
-              </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- <ul class="navbar-nav ms-auto"> -->
-                      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav" style="--bs-scroll-height: 100px;">
-
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#product">Product</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#service">Service</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-2">       
-                           <button class="btn btn-danger mx-2"><a class="text-white">Cart</a></button>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-        </nav>
-        <!-- End Navbar -->
-    </header>
 
     <section>
-        <!-- Home Section -->
-        <div class="home-container text-white text-center" >
-            <div class="container py-5">
-                <h1 class="heading"><u>HERBS</u></h1>
-                <h2>Herbs are widely used globally. They can be medicinal or for spices. Explore our wide range of herbs and their benefits.</h2>
-            </div>
-        </div>
-        <!-- End Home Section -->
+      <header class="position-fixed w-100" style="z-index: 9999;">
+          <!-- start of navbar -->
+          <nav class="navbar navbar-expand-lg p-4 navbar-dark bg-success" >
+            <div class="container-fluid">
+                <div class="col-4 text-center ">
+                    <a class="navbar-brand" style="font-size:40px;" href="#"><img src="assets/main-logo.png" alt="logo" width="90vw"> </a>
 
-        <!-- About Section -->
-        <section class="about-container bg-light py-5" id="about">
-            <div class="container">
-                <h1 class="text-center mb-5 mt-5">About Us</h1>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img src="assets/homebg.jpeg" class="img-fluid rounded" alt="About Image">
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="lead">Herbs are widely used globally. They can be medicinal or for spices. Learn more about our mission and vision.</p>
-                        <p>Herbs are widely used globally. They can be medicinal or for spices. Learn more about our mission and vision.</p>
-                        <p class="lead">Herbs are widely used globally. They can be medicinal or for spices. Learn more about our mission and vision.</p>
-                        <p class="lead">Herbs are widely used globally. They can be medicinal or for spices. Learn more about our mission and vision.</p>
-
-                    </div>
-                    
                 </div>
-            </div>
-        </section>
-        <!-- End About Section -->
+             
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#product">product</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#service">service</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase " href="#contact" tabindex="-1" aria-disabled="true">contact</a>
+                  </li>
+                </ul>
 
-        <!-- Product Section -->
-        <section class="product-con py-5" id="product">
-            <div class="container">
-                <h1 class="text-center mb-5 mt-5">PRODUCT</h1>
-                <!-- Products Grid -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card mb-4">
-                          <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
-                          <div class="card-body">
-                              <h5 class="card-title">managu</h5>
-                              <p class="card-text">Short description of the herb goes here.</p>
-                              <a href="#" class="btn btn-primary">Order</a>
+           
+              </div>
+              <div class="col-2 ">
+                <!-- <button class="btn btn-info"><a href="">Login</a></button> -->
+                <button class="btn btn-danger "><a class="text-white"> cart</a></button>
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <!-- <button class="btn btn-outline-success bg-danger" type="submit"><a href="signup.php">Signup</a></button> -->
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            </div>
+          
+          
+            
+          </nav>
+        <!-- end of navbar -->
+      </header>
+
+
+       
+        <div class="home-container bg-primary" style="background-image: ;" >
+           <center>
+            <h1 class="heading" style="color:white; padding-top: 25PX;font-size: 42px;"><u>HERBS</u></h1>
+           </center> 
+            <div class="container text-center text-white ">
+                
+                <h2>Herbs are widely used globally. They can be medicinal of for spices.
+                    so many types of herbs are available many of them which ill list them below and
+                     their benefits.
+                </h2>
+            </div>
+                        <!-- end of product-item -->
+
+        </div>
+
+
+    </section>
+
+    <!-- end of home section -->
+
+
+    <!-- about section -->
+<section class="about-container bg-light  py-5" id="about">
+<div class="container  ">
+   
+    <h1 class=" text-center mt-5  ">About Us</h1>
+
+    <div class="row  mt-5 ">
+
+        <div class=" col-lg-6   ">
+
+        <!-- <div class="about-image mt-5 col-6"> -->
+<!-- <img src="assets/homebg.jpeg" alt="" srcset="" width="600vw"> -->
+<img src="assets/homebg.jpeg" class="img-fluid" alt="..." >
+        </div>
+
+
+        <div class="col-lg-6">
+            <p class="lead ">Herbs are widely used globally. They can be medicinal of for spices.
+                so many types of herbs are available many of them which ill list them below and
+                 their benefits.
+            </p>
+            
+            <!-- <p class="lead ">Herbs are widely used globally. They can be medicinal of for spices.
+                so many types of herbs are available many of them which ill list them below and
+                 their benefits.
+            </p> -->
+
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+    <!-- end of about section -->
+    <section id="product" class="product-container">
+        <div class="container py-5 mt-5 mb-4">
+           <center> <h1>PRODUCT</h1></center>
+
+
+           <!-- start of row 1 -->
+        <div class="row mb-4 ">
+            
+            <!-- <div class="col-sm-6  p-3 col-md-4 bg-primary">
+                <img src="" alt="">
+                <h3>managu</h3>
+
+                <p>this explains short info about the herb</p>
+                <h2>order</h2>
+                
+
+            </div> -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card mb-4">
+                  <img src="assets/Cannabis sativa.jpg" class="card-img-top" alt="Product Image">
+                  <div class="card-body">
+                      <h5 class="card-title">managu</h5>
+                      <p class="card-text">Short description of the herb goes here.</p>
+                      <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+              </div>
+          </div>
+            <!-- end of product-item -->
+
+            <div class="col-lg-4 col-md-6 b">
+              <div class="card mb-4">
+                  <img src="assets/Ginger2.jpg" class="card-img-top" alt="Product Image">
+                  <div class="card-body">
+                      <h5 class="card-title">managu</h5>
+                      <p class="card-text">Short description of the herb goes here.</p>
+                      <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+              </div>
+          </div>
+                        <!-- end of product-item -->
+                        <div class="col-lg-4 col-md-6 ">
+                          <div class="card mb-4">
+                              <img src="assets/Chamomile.jpg" class="card-img-top" alt="Product Image">
+                              <div class="card-body">
+                                  <h5 class="card-title">managu</h5>
+                                  <p class="card-text">Short description of the herb goes here.</p>
+                                  <a href="#" class="btn btn-primary">Order</a>
+                              </div>
                           </div>
                       </div>
-                  </div>
-                  <!-- end of first item -->
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
-                        <div class="card-body">
-                            <h5 class="card-title">madasho</h5>
-                            <p class="card-text">Short description of the product goes here.</p>
-                            <a href="#" class="btn btn-primary">Order</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of second item -->
-                <div class="col-lg-4 col-md-6">
-                  <div class="card mb-4">
-                      <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
-                      <div class="card-body">
-                          <h5 class="card-title">madasho</h5>
-                          <p class="card-text">Short description of the product goes here.</p>
-                          <a href="#" class="btn btn-primary">Order</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- end of third item -->
-                </div>
-                <!-- End of row 1 -->
-                <!-- start of row 2 -->
-                <div class="row">
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="assets/bgimage.webp" class="card-img-top" alt="Product Image">
-                        <div class="card-body">
-                            <h5 class="card-title">madasho Name</h5>
-                            <p class="card-text">Short description of the product goes here.</p>
-                            <a href="#" class="btn btn-primary">Order</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of first item -->
-                <div class="col-lg-4 col-md-6">
-                  <div class="card mb-4">
-                      <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
-                      <div class="card-body">
-                          <h5 class="card-title">Product madasho</h5>
-                          <p class="card-text">Short description of the product goes here.</p>
-                          <a href="#" class="btn btn-primary">Order</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- end of second item -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card mb-4">
-                    <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">madasho </h5>
-                        <p class="card-text">Short description of the product goes here.</p>
-                        <a href="#" class="btn btn-primary">Order</a>
-                    </div>
-                </div>
-            </div>
-            <!-- end of third item -->
-              </div>
-                <!-- end of row2 -->
-            </div>
-        </section>
-        <!-- End Product Section -->
+                                    <!-- end of product-item -->
+                                </div>
 
-        <!-- Contact Section -->
-        <section class="contact-con bg-light py-5" id="contact">
-            <div class="container">
-                <h1 class="text-center mb-5 mt-5">Contact</h1>
-                <p>Herbs are widely used globally. They can be medicinal of for species</p>
-                <div class="row">
-                    <!-- Contact Information and Form -->
-                    <div class=" col-sm-6 col-md-5 ">
-                      <h1>Location</h1>
+                                <!-- end of row 1 -->
+
+
+                                    <!-- start of row 2 -->
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mb-4">
+                <img src="assets/moringa.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">managu</h5>
+                    <p class="card-text">Short description of the herb goes here.</p>
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+        </div>
+            <!-- end of product-item -->
+
+            <div class="col-lg-4 col-md-6 ">
+              <div class="card mb-4">
+                  <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
+                  <div class="card-body">
+                      <h5 class="card-title">managu</h5>
+                      <p class="card-text">Short description of the herb goes here.</p>
+                      <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+              </div>
+          </div>
+                        <!-- end of product-item -->
+                        <div class="col-lg-4 col-md-6 ">
+                          <div class="card mb-4">
+                              <img src="assets/Lantana camara.jpg" class="card-img-top" alt="Product Image">
+                              <div class="card-body">
+                                  <h5 class="card-title">managu</h5>
+                                  <p class="card-text">Short description of the herb goes here.</p>
+                                  <a href="#" class="btn btn-primary">Order</a>
+                              </div>
+                          </div>
+                      </div>
+                                    <!-- end of product-item -->
+                                </div>
+
+                                <!-- end of row 2 -->
+
+
+
+
+                                    <!-- start of row 3 -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card mb-4">
+                <img src="assets/Carduus tenuiflorus.jfif" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">managu</h5>
+                    <p class="card-text">Short description of the herb goes here.</p>
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+        </div>
+            <!-- end of product-item -->
+
+            <div class="col-lg-4 col-md-6 ">
+              <div class="card mb-4">
+                  <img src="assets/Datura stramonium.jpg" class="card-img-top" alt="Product Image">
+                  <div class="card-body">
+                      <h5 class="card-title">managu</h5>
+                      <p class="card-text">Short description of the herb goes here.</p>
+                      <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+              </div>
+          </div>
+                        <!-- end of product-item -->
+                        <div class="col-lg-4 col-md-6 ">
+                          <div class="card mb-4">
+                              <img src="assets/homebg.jpeg" class="card-img-top" alt="Product Image">
+                              <div class="card-body">
+                                  <h5 class="card-title">managu</h5>
+                                  <p class="card-text">Short description of the herb goes here.</p>
+                                  <a href="#" class="btn btn-primary">Order</a>
+                              </div>
+                          </div>
+                      </div>
+                                    <!-- end of product-item -->
+                                </div>
+
+                                <!-- end of row 3 -->
+
+        
+                        <!-- end of product-item -->
+
+        
+
+
+        </div>
+
+    </section>
+
+<!-- end of product-item -->
+
+
+
+
+      <!-- contact section -->
+
+                    <section class="contact-container p-5 bg-light" id="contact">
+                    <div class="container ">
+                    <h1 class="text-center mt-5">Contact</h1>
+                    <p class="lead ">Herbs are widely used globally. They can be medicinal of for spices.
+                       
+                    </p>
+
+                    <div class="row">
+
+
+
+                        <div class=" col-lg-4 col-md-5 ">
+                            <h1>Location</h1>
 <div class="loc">
-
-<h2> <img src="assets/locate1.png" alt="address" width="80px">Address</h2>
-<p>Nairobi/Kenya</p>
-<p>p.o Box 008725</p>
+   
+    <h2> <img src="assets/locate1.png" alt="address" width="80px">Address</h2>
+    <p>Nairobi/Kenya</p>
+    <p>p.o Box 008725</p>
 </div>
 <div class="mail">
-<h2><img src="assets/emailio.png" width="80px" alt="email"> Email</h2>
+   <h2><img src="assets/emailio.png" width="80px" alt="email"> Email</h2>
 <p><a href="mailto:herbs@gmail.com">herbs@gmail.com</a></p>
 </div>
 
 <div class="tel">
-<h2><img src="assets/phone1.png" width="80px" alt="email"> Phone Number</h2>
-<p><a href="tel:0789564466">0789564466</a></p>
+    <h2><img src="assets/phone1.png" width="80px" alt="email"> Phone Number</h2>
+    <p><a href="tel:0789564466">0789564466</a></p>
 </div>
-                  </div>
+                        </div>
 
 
 
 
-                  <div class=" col-sm-6 ">
+                        <div class=" col-lg-5 col-md-5">
 <div class="message-container">
 <h2>Message Us</h2>
 <form>
 
-<div class="mb-3">
-  <label for="exampleInputEmail1" class="form-label">Name</label>
-  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name" aria-describedby="emailHelp" required>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name" aria-describedby="emailHelp" required>
+      </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" aria-describedby="emailHelp" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Message</label>
+      <textarea name="" class="form-control" id="" cols="37" placeholder="Enter the Message" required rows="8"></textarea>
+    </div>
+
+    <!-- <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
 </div>
+                        </div>
 
-<div class="mb-3">
-<label for="exampleInputEmail1" class="form-label">Email address</label>
-<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" aria-describedby="emailHelp" required>
-</div>
 
-<div class="mb-3">
-<label for="exampleInputPassword1" class="form-label">Message</label>
-<textarea name="" id="" class="form-control" cols="37" placeholder="Enter the Message" required rows="8"></textarea>
-</div>
 
-<!-- <div class="mb-3 form-check">
-<input type="checkbox" class="form-check-input" id="exampleCheck1">
-<label class="form-check-label" for="exampleCheck1">Check me out</label>
-</div> -->
-<button type="submit" class="btn btn-primary">Send</button>
-</form>
 
-</div>
-                  </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact Section -->
-    </section>
 
-    <!-- Footer -->
-    <footer id="footer" class="bg-success py-3">
-        <div class="container">
-            <div class="text-center text-white">
-              <h1><img src="assets/main-logo.png" alt="" width="44"> Herbs</h1>
-                All Rights Reserved,2024
-            </div>
-            <div class="text-center text-white">
-                Created by Eric
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
+                    </div>
+                    
+
+                    </div>
+
+
+                    </section>
+
+
+
+<footer class="py-1 bg-success" >
+   <div class="container text-center">
+    <h1><img src="assets/main-logo.png" alt="footer-logo" srcset="" width="34px"> Herbs</h1>
+    <p>Created by Eric <br>
+        All Rights Reserved, 2024
+    </p>
+   </div>
    
+</footer>
+
+  
+
+                    
 
 
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.js"></script>
-  </body>
+
+
+
+
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
